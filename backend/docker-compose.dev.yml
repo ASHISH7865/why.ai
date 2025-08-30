@@ -8,9 +8,9 @@ services:
     ports:
       - "9001:9001"
     environment:
-      - NODE_ENV=development
+      - NODE_ENV=production
       - PORT=9001
-      - MONGODB_URI=mongodb://mongo:27017/why-ai
+      - MONGODB_URI=mongodb://admin:password123@mongo:27017/why-ai?authSource=admin
       - REDIS_URL=redis://redis:6379
       - JWT_SECRET=${JWT_SECRET}
       - OPENAI_API_KEY=${OPENAI_API_KEY}

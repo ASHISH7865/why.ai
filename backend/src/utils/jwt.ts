@@ -3,9 +3,9 @@ import env from '../config/env.js';
 
 
 const JWT_SECRET = env.JWT_SECRET;
-const JWT_EXPIRES_IN = Number(env.JWT_EXPIRES_IN);
+const JWT_EXPIRES_IN = env.JWT_EXPIRES_IN;
 const JWT_REFRESH_SECRET = env.JWT_REFRESH_SECRET;
-const JWT_REFRESH_EXPIRES_IN = Number(env.JWT_REFRESH_EXPIRES_IN);
+const JWT_REFRESH_EXPIRES_IN = env.JWT_REFRESH_EXPIRES_IN;
 const JWT_ALGORITHM = env.JWT_ALGORITHM;
 
 export interface TokenPayload {

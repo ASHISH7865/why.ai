@@ -15,9 +15,9 @@ const envSchema = z.object({
     
     // JWT
     JWT_SECRET: z.string().min(32),
-    JWT_EXPIRES_IN: z.string().default('15m'),
+    JWT_EXPIRES_IN: z.number().default(15 * 60 * 1000),
     JWT_REFRESH_SECRET: z.string().min(32),
-    JWT_REFRESH_EXPIRES_IN: z.string().default('7d'),
+    JWT_REFRESH_EXPIRES_IN: z.number().default(7 * 24 * 60 * 60 * 1000),
     JWT_ALGORITHM: z.enum(['HS256', 'HS384', 'HS512']).default('HS256'),
     
     // Password hashing
