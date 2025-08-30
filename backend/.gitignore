@@ -7,4 +7,3 @@ logs/combined.log
 logs/error.log
 mongo_data
 redis_data
-.env.example
